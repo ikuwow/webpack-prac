@@ -9,5 +9,23 @@ http://webpack.github.io/docs/tutorials/getting-started/
 
 Install node.js.
 
-## Setup
+and install webpack.
+
+```
+$ npm install webpack -g
+```
+
+## Basic usage
+
+```
+$ webpack ./main.js bundle.js
+```
+
+## Using style-loader
+
+installation
+
+```
+npm install css-loader style-loader
+```
 
