@@ -23,9 +23,29 @@ $ webpack ./main.js bundle.js
 
 ## Using style-loader
 
-installation
+### installation
 
 ```
 npm install css-loader style-loader
 ```
 
+
+### First usage
+
+```entry.js
+require("!style!css!./style.css");
+```
+
+```
+$ webpack entry.js bundle.js
+```
+
+### Second usage
+
+```entry.js
+require("./style.css");
+```
+
+```
+$ webpack entry.js bundle.js --module-bind 'css=style!css'
+```
