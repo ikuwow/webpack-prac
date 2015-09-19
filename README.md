@@ -49,3 +49,38 @@ require("./style.css");
 ```
 $ webpack entry.js bundle.js --module-bind 'css=style!css'
 ```
+
+### Third usage
+
+Write `webpack.config.js` and just type:
+
+```
+$ webpack
+```
+
+## prettier output
+
+```
+$ webpack --progress --colors
+```
+
+## Watch mode
+
+```
+$ webpack --progress --colors --watch
+```
+
+## development server
+
+```
+$ npm install webpack-dev-server -g
+```
+
+```
+$ webpack-dev-server --progress --colors
+```
+
+
+It builds simple express server, 
+and you can open http://localhost:8080/webpack-dev-server/bundle.
+
